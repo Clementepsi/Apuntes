@@ -1,0 +1,117 @@
+// Mejores prácticas
+// Simplificar func. lo mas que se pueda 100 líneas
+
+// 1. Utilizar keyword function
+// 2. Nombrar nuestra funcion
+// 3. Utilizar () y abrir y cerrar la funcion {}
+
+
+function myFunction() {
+	//aqui va el cuerpo de la función
+	console.log("Hola Mundo")
+}
+myfunction()
+
+function myName(){
+	let name = "clemente flores";
+	console.log(name);
+}
+myName();
+
+function scopeFuntion() {
+	let local = "Estose encuentra dentro de la duncion"
+	console.log(local);
+}
+scopeFunction();
+console.log(local);
+
+var nombre = "Clemente Flores"
+
+function globalScope() {
+	console.log(nombre);
+}
+golbalScope();
+
+// Scope de variables
+// let
+// Scope global
+
+//VAR
+// Scope global
+// HOISTING: no se puede utilziar o invocar antes de declarar. aparece como undefined.
+console.log(x)
+var x= hola
+
+//LET
+// Scope global
+// Hoisting: la variable no existe para nuestro interprete 
+console.log(a)
+let a = "hoisting let";
+
+//const
+// Scope global
+// Hositing: No se puede utilizar. no existe para nuestro interprete de JS.
+console.log(c)
+const c = "hoisting let";
+
+//input
+const miNombre = "Zabdiel";
+
+function fiuFiu() {
+	console.log();
+}
+
+//Parametro declarado en variable
+fiuFiu(miNombre);
+
+// Parametro aleatorio
+fiuFiu("Zabdiel Diaz");
+// funcion con mas de un parametro
+function dosParam(x,y) {
+	console.log(x);
+	console.log(y);
+}
+// Invocacion con 2 parametros aleatorios
+dosParam("Hola","Mundo");
+
+// Funcion con 3 parametros
+function tresParam(x,y,z) {
+	console.log(x + y + z);
+}
+tresParam("hola","luis","clemente");
+
+// Output
+function out() {
+	let x = "Hola";
+	return x;
+}
+// Podemos recibir el dato de forma directa
+console.log(out());
+
+//Podemos guardar el output en una variable y la podemos utilizar despues
+const receive= out();
+
+//console.log(receive);
+
+//Funcion con parametro y return
+
+function areaRectangulo(b,a){
+	var resultado = b * a;
+	return resultado;
+}
+console.log( areaRectangulo(6.3));
+
+function areaRectangulo(b, a) {
+    var resultado = b * a;
+    return resultado;
+}
+
+console.log(areaRectangulo(6, 3));
+
+
+function areaTriangulo(b, a) {
+    var resultado = b * a / 2;
+    return resultado;
+}
+
+console.log( areaTriangulo(8, 4));
